@@ -1,7 +1,6 @@
 //fichero graceful_shutdown.go
 package main
-import ("context";"fmt";"net/http";"os";"os/signal";"time"
-)
+import ("context";"fmt";"net/http";"os";"os/signal";"time")
 func main() {
 	srv := &http.Server{Addr: ":8880"}
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
